@@ -15,6 +15,6 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-  - curl -f -T helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uavp365:$BINTRAY_API_KEY "https://api.bintray.com/content/avp365/otus-cpp/homework/$TRAVIS_BUILD_NUMBER/helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
+  - curl -f -T helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uavp365:$BINTRAY_API_KEY "https://api.bintray.com/content//avp365/ocpp/hello/$TRAVIS_BUILD_NUMBER/helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
   on:
     all_branches: true
